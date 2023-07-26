@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>country info</title>
+</head>
+<body>
+    <h2>{{>header}}</h2>
+    <form  >
+    <h2> this is : {{title}}</h2>
+    <h2>{{desc}} <input type="text" id="cn" name="fname" required></h2>
+    <button type="submit" id="get" >{{btn}}</button>
+    {{!-- <label > {Country : }</label> --}}
+    {{!-- <input type="text"> --}}
+    {{!-- <button></button> --}}
+    </form>
+{{!-- <script> 
+    const from = document.querySelector("form")
+    const baseUrl = "http://localhost:3000/upload"
+
+    from.addEventListener("submit" , (e) => {
+    async function getinfo(e){
+        e.preventDefult()
+    const fd = new FormData(form)
+
+    const urlencoded = new URLSearchParams(fd).toString
+
+        const res = await fetch(baseUrl,
+        {
+            method :"POST",
+            body:urlencoded,
+            headers : {
+                "content-type":"application/x-www-from-urlencoded",
+            }
+        })
+        
+    }
+})--}}
+
+</script>
+</body>
+</html>
